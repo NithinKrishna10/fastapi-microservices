@@ -1,11 +1,11 @@
-from typing import Literal, Optional
+from typing import Optional, Any
 
 from pydantic import BaseModel
 
 
 class Token(BaseModel):
     access_token: str
-    token_type: Literal["bearer"]
+    token_type: Any
 
 
 class TokenPayload(BaseModel):
